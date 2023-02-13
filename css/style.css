@@ -1,0 +1,320 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --white: white;
+    --black: black;
+    --main-color: rgb(42, 214, 177);
+    --main-color-dark: rgb(38, 189, 157);
+    --red: rgb(178, 0, 0);
+    --gray: rgb(172, 172, 172);
+}
+
+body{
+    font-family: 'Mulish', sans-serif;
+    background-color: aliceblue;
+    font-size: 20px;
+}
+/* ---------------GENERAL STYLES ---------------- */
+
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+.align_center{
+    align-items: center;
+}
+
+.justfy_center{
+    display: flex;
+    justify-content: center;
+}
+
+button,
+input{
+    font-family: 'Mulish', sans-serif;
+}
+button{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+
+ul li{
+    list-style: none;
+}
+
+section{
+    padding-top: 100px;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1140px;
+}
+
+/* END OF GENERAL STYLES */
+/* ------------------------------------------------------------------------ */
+/* /////////////////////    HEADER STYLES       ////////////////////////////////////// */
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    height: 50px;
+    box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+    background: var(--white);
+}
+
+.logo{
+    font-size: 120%;
+    margin-left: 20px;
+    padding-top: 10px;
+    color: var(--main-color-dark);
+}
+.header_main_container{
+    gap: 30px;
+    padding-top: 15px;
+}
+.user_name{
+    margin-right: 30px;
+    padding-top: 14px;
+    font-weight: 600;
+    color: var(--main-color-dark);
+}
+.header_main_container i{
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.header_main_container i:hover{
+    color: var(--main-color-dark);
+}
+
+
+/* ////////////////////            END OF HEADER STYLES   ////////////////////////////////////////// */
+
+/* ////////////////// home page styles /////////////////////// */
+.blog_container{
+    gap: 30px;
+}
+.blog_cards{
+    height: auto;
+    border-radius: 8px;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+    background-color: var(--white);
+    width: 800px;
+    padding: 20px;
+}
+
+.blog_date,
+.blog_title{
+    font-size: 80%;
+    color: var(--main-color-dark);
+    margin-bottom: 5px;
+}
+
+.blog_img{
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    height: 300px;
+}
+
+.icon_container{
+    display: flex;
+    gap: 4px;
+    margin-top: 10px;
+}
+
+.icon_container i{
+    font-size: 90%;
+    cursor: pointer;
+    color: var(--red);
+}
+.icon_container span{
+    color: var(--main-color);
+    font-size: 80%;
+    margin-top: -1px;
+    font-weight: 600;
+}
+
+
+
+.blog_paragraph{
+    font-size: 80%;
+    margin-top: 10px;
+    height: 63px;
+    overflow: hidden;
+}
+
+.read_more_btn{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background: none;
+    border: none;
+    outline: none;
+    color: var(--main-color);
+    font-size: 80%;
+    font-weight: 600;
+}
+
+.read_more_btn:hover{
+    color: var(--main-color-dark);
+}
+
+
+
+/* /////////////////////  PROFILE PAGE ////////////////////////////// */
+
+.profile_page_header{
+    background-color: var(--white);
+    height: 320px;
+    border-radius: 6px;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+
+.profile_img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+.profile_details{
+    margin-top: 30px;
+    margin-right: 10%;
+    gap: 20px;
+}
+
+.profile_details li{
+    font-size: 90%;
+    color: var(--main-color);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.profile_details li:hover{
+    color: var(--main-color-dark);
+}
+
+
+.edit_profile_form{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+    background-color: var(--white);
+    border-radius: 6px;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+    margin-top: 50px;
+    padding: 20px 20px;
+}
+
+.input_container label{
+    background-color: var(--gray);
+    border-radius: 6px 6px  0 0;
+    padding: 5px 10px;
+    color: var(--black);
+    font-size: 80%;
+}   
+.input_container input{
+    width: 100%;
+    outline: none;
+    border-radius: 0 6px 6px 6px;
+    border: 1px solid var(--gray);
+    height: 35px;
+    text-indent: 5px;
+}
+
+.input_container button{
+    width: 80px;
+    height: 35px;
+    background: var(--main-color);
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    color: var(--white);
+    font-size: 80%;
+    font-weight: 600;
+}
+.input_container button:hover{
+    background-color: var(--main-color-dark);
+}
+
+
+/* ////////////////// BLOG PAGE STYLES /////////// */
+
+.write_blog_container{
+    background-color: var(--white);
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+    border-radius: 6px;
+    padding: 20px;
+}
+.write_blog_container textarea{
+    width: 100%;
+    resize: none;
+    height: 200px;
+    border-radius: 6px;
+    padding-top: 5px;
+    padding-left: 20px;
+    outline: none;
+    border: 1px solid var(--gray);
+}
+
+.write_blog_container .blog_img{
+    margin-bottom: 20px;
+}
+.uploaded_img_as_blog{
+    display: none;
+}
+
+.save_blog_btn{
+    width: 80px;
+    height: 35px;
+    background: var(--main-color);
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    color: var(--white);
+    font-size: 80%;
+    font-weight: 600;
+}
+.save_blog_btn:hover{
+    background-color: var(--main-color-dark);
+}
+.upload_img_btn{
+    color: var(--main-color);
+    cursor: pointer;
+}
+.upload_img_btn:hover{
+   color: var(--main-color-dark);
+}
+
+.blog_icon_container{
+    display: flex;
+    gap: 20px;
+  
+}
+
+.remove_img_btn{
+    color: var(--main-color);
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.edit_profile_container{
+    display: none;
+}

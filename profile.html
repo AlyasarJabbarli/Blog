@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8121d7ba28.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header class="row">
+        <h2 class="logo">My Blog</h2>
+        <div class="header_main_container justfy_center">
+            <a href="index.html"><i class="fas fa-home"></i></a>
+            <a href="profile.html"><i class="fas fa-user"></i></a>
+            <a href="blog.html"><i class="fas fa-blog"></i></a>
+        </div>
+        <div class="row">
+            <p class="user_name">
+                Zakir Abd
+            </p>
+            <button id="logOutBtn">Log out</button>
+       </div>
+    </header>
+    <section>
+        <div class="container">
+            <div class="profile_page_header">
+                <div class="row">
+                    
+                    <label for="profileFile">
+                        <img class="profile_img" src="https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg" />
+                    </label>
+                    <input type="file" id="profileFile" style="display: none;">
+                    <ul class="profile_details column">
+                        <li id="prName">Name: Zakir Abd</li>
+                        <li id="prCountry">Country:  Azerbaijan</li>
+                        <li id="prCity">City: Baku</li>
+                        <li id="prDate">Birth Year: 1995</li>
+                        <li id="prEmail">Email: zakir@gmail.com</li>
+                        <li id="prBtn"><i class="fas fa-edit"></i></li>
+                    </ul>
+                   
+                </div>
+            </div>
+
+            <div class="edit_profile_container">
+                <form class="edit_profile_form">
+                    <div class="input_container">
+                        <label for="name">Name</label>
+                        <input id="name" required type="text" />
+                    </div>
+                    <div class="input_container">
+                        <label for="country">Country</label>
+                        <input id="country" required type="text" />
+                    </div>
+                    <div class="input_container">
+                        <label for="city">City</label>
+                        <input id="city" required type="text" />
+                    </div>
+                    <div class="input_container">
+                        <label for="birth_year">Birth Year</label>
+                        <input id="birth_year" required type="date" />
+                    </div>
+                    <div class="input_container">
+                        <label for="email">Email</label>
+                        <input id="email" required type="Email" />
+                    </div>
+                    <div class="input_container">
+                        <label for="password">Password</label>
+                        <input id="password" type="password" />
+                    </div>
+                    <div class="input_container">
+                       <button id="saveBtn">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="/lesson18/js/profile.js"></script>
+    <script src="./js/header.js" ></script>
+   
+<!-- <script src="main.js"></script> -->
+</body>
+</html>
